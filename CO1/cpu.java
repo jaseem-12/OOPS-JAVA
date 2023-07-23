@@ -27,7 +27,8 @@ public class cpu{
     }}
     public static void main(String[] args) {
          cpu.ram obj1= new cpu.ram(8,"Intel");
-         cpu.processor obj2 = new cpu.processor(8,"Samsung");
+		 cpu obj3=new cpu();
+         cpu.processor obj2 =obj3.new processor(8,"Samsung");
          obj1.display();
          obj2.display();
 
